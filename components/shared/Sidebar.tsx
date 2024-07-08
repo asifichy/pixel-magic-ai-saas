@@ -1,3 +1,5 @@
+"use client" // server side rending  by default it's going to a client side rendering
+
 import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'
@@ -25,7 +27,7 @@ const Sidebar = () => {
                             return (
                                 <li key={link.route} className={`sidebar-nav_element group 
                                     ${isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'}`}>
-
+                                        {link.label}
                                 </li>
                             )
                         })}
