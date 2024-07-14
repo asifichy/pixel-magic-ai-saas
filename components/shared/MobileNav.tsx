@@ -38,7 +38,7 @@ const pathname = usePathname();
                     <SheetContent className="sheet-content sm:w-64">
                         <>
                             <Image 
-                            src="assets/images/Pixel Magic.png" 
+                            src="/assets/images/Pixel Magic.png" 
                             alt="logo"
                             width={152}
                             height={23}/>
