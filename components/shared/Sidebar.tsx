@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'
-import { SignedIn } from '@clerk/nextjs'
+import { SignedIn, SignedOut } from '@clerk/nextjs'
 import { usePathname } from 'next/navigation'
 import { navLinks } from '@/constants'
 
@@ -38,6 +38,10 @@ const Sidebar = () => {
                         })}
                     </ul>
                 </SignedIn>
+
+                <SignedOut>
+                    
+                </SignedOut>
             </nav>
 
         </div>        
